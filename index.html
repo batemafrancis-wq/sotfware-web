@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BATEMA FRANCIS — Software Engineer</title>
+  <meta name="description" content="BATEMA FRANCIS — Software Engineer crafting websites, web apps, e-commerce platforms and software products." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b5fff'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>B</text></svg>" />
+</head>
+<body>
+  <div class="bg-orbs"></div>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">BF</span>
+        <span>BATEMA FRANCIS<br><small>SOFTWARE ENGINEER</small></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
+        <a href="#contact" class="btn-ghost-sm">Hire Me</a>
+        <button class="burger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <span class="eyebrow"><span class="pulse-dot"></span> Available for new projects</span>
+    <h1>Building <span class="grad">digital products</span><br>that move the world forward.</h1>
+    <p class="lead">Hi, I'm <strong>BATEMA FRANCIS</strong> — a Software Engineer designing and shipping high-performance websites, web apps, e-commerce platforms and software that people love to use.</p>
+    <div class="hero-cta">
+      <a href="products.html" class="btn btn-primary">Explore Products <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-glass">Let's Work Together</a>
+    </div>
+
+    <!-- 3D stage -->
+    <div class="hero-stage">
+      <div class="hero-card glass">
+        <div class="hero-card-bar"><i></i><i></i><i></i></div>
+        <div class="hero-grid">
+          <div class="hero-tile"><div class="num" data-count="50" data-suffix="+">0</div><div class="lbl">Projects Shipped</div></div>
+          <div class="hero-tile"><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Years Experience</div></div>
+          <div class="hero-tile"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Client Focused</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint"><div class="mouse"></div><span>Scroll to explore</span></div>
+  </header>
+
+  <!-- WHAT I DO -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">What I Do</span>
+        <h2>Engineering across the full stack</h2>
+        <p>From pixel-perfect interfaces to scalable backends — I bring ideas to production with craftsmanship and speed.</p>
+      </div>
+      <div class="features">
+        <div class="glass feature reveal d1"><div class="ic">🛒</div><h3>E-Commerce</h3><p>Conversion-focused online stores with secure payments, carts and real-time inventory.</p></div>
+        <div class="glass feature reveal d2"><div class="ic">⚡</div><h3>Web Apps</h3><p>Fast, reactive single-page and PWA applications built with modern frameworks.</p></div>
+        <div class="glass feature reveal d3"><div class="ic">📱</div><h3>Mobile Apps</h3><p>Cross-platform apps for iOS & Android with native-grade performance.</p></div>
+        <div class="glass feature reveal d1"><div class="ic">🔌</div><h3>APIs & Backend</h3><p>Robust, secure and scalable APIs, microservices and cloud infrastructure.</p></div>
+        <div class="glass feature reveal d2"><div class="ic">🎨</div><h3>UI / UX Design</h3><p>Clean, intuitive and accessible interfaces with a premium glassy aesthetic.</p></div>
+        <div class="glass feature reveal d3"><div class="ic">☁️</div><h3>Cloud & DevOps</h3><p>CI/CD pipelines, containers and deployments that scale effortlessly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Selected Work</span>
+        <h2>Featured products</h2>
+        <p>A glimpse of the software I've built. Browse the full showcase — or add your own project on the products page.</p>
+      </div>
+      <div class="products-grid" id="products-grid"></div>
+      <div style="text-align:center;margin-top:46px" class="reveal">
+        <a href="products.html" class="btn btn-primary">View All Products <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA banner -->
+  <section>
+    <div class="container reveal">
+      <div class="cta-banner">
+        <h2>Have a project in mind?</h2>
+        <p>I'm currently available to take on new work. Let's turn your idea into a beautifully engineered product.</p>
+        <div class="hero-cta" style="animation:none;opacity:1;transform:none">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+          <a href="about.html" class="btn btn-glass">More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Get In Touch</span>
+        <h2>Let's build something great</h2>
+        <p>Available for freelance projects, collaborations and full-time roles.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="glass contact-info reveal d1">
+          <div class="contact-line"><div class="ic">📧</div><div><div class="l">Email</div><div class="v">francis@batema.dev</div></div></div>
+          <div class="contact-line"><div class="ic">📍</div><div><div class="l">Location</div><div class="v">Available Worldwide · Remote</div></div></div>
+          <div class="contact-line"><div class="ic">🟢</div><div><div class="l">Status</div><div class="v">Open to new projects</div></div></div>
+          <div class="social">
+            <a href="#" title="GitHub">GH</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="X">X</a>
+            <a href="#" title="Dribbble">Dr</a>
+          </div>
+        </div>
+        <form class="glass contact-info reveal d2" onsubmit="submitContact(event)">
+          <div class="field"><label>Name</label><input required placeholder="Your name" /></div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>Message</label><textarea required placeholder="Tell me about your project..."></textarea></div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center" type="submit">Send Message <span class="arrow">→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner">
+      <div class="brand"><span class="logo">BF</span><span>BATEMA FRANCIS</span></div>
+      <div class="foot-links">
+        <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="#contact">Contact</a>
+      </div>
+      <div class="copy">© 2026 Batema Francis. Crafted with care.</div>
+    </div>
+  </footer>
+
+  <!-- ADD PRODUCT MODAL -->
+  <div class="modal-overlay" id="modal">
+    <form class="modal glass" onsubmit="submitProduct(event)">
+      <h3>Add a Product</h3>
+      <p class="sub">Showcase a new website, web app or software project. Saved in your browser.</p>
+      <div class="field"><label>Project Name</label><input id="pf-name" required placeholder="e.g. NovaShop" /></div>
+      <div class="field"><label>Category</label>
+        <select id="pf-type"><option>E-Commerce</option><option>Web App</option><option>Mobile App</option><option>Software / API</option></select>
+      </div>
+      <div class="field"><label>Description</label><textarea id="pf-desc" required placeholder="What does this product do?"></textarea></div>
+      <div class="field"><label>Tech Tags (comma separated)</label><input id="pf-tags" placeholder="React, Node, Stripe" /></div>
+      <div class="field"><label>Icon</label>
+        <div class="emoji-picker">
+          <button type="button" class="sel" onclick="pickEmoji(this,'🚀')">🚀</button>
+          <button type="button" onclick="pickEmoji(this,'🛒')">🛒</button>
+          <button type="button" onclick="pickEmoji(this,'📱')">📱</button>
+          <button type="button" onclick="pickEmoji(this,'💳')">💳</button>
+          <button type="button" onclick="pickEmoji(this,'🎓')">🎓</button>
+          <button type="button" onclick="pickEmoji(this,'⚡')">⚡</button>
+          <button type="button" onclick="pickEmoji(this,'🎮')">🎮</button>
+          <button type="button" onclick="pickEmoji(this,'🤖')">🤖</button>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-glass" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

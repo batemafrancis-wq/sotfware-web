@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — BATEMA FRANCIS</title>
+  <meta name="description" content="Articles and thoughts on software engineering by Batema Francis." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b5fff'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>B</text></svg>" />
+</head>
+<body>
+  <div class="bg-orbs"></div>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="logo">BF</span><span>BATEMA FRANCIS<br><small>SOFTWARE ENGINEER</small></span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <a href="index.html#contact" class="btn-ghost-sm">Hire Me</a>
+        <button class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>The <span class="grad">Blog</span></h1>
+      <p>Thoughts, tutorials and insights on software engineering, product design and the craft of building.</p>
+    </div>
+  </header>
+
+  <section style="padding-top:20px">
+    <div class="container">
+      <!-- Featured -->
+      <article class="glass featured-post reveal d1">
+        <div class="cover">📰</div>
+        <div class="body">
+          <div class="meta"><span class="cat">FEATURED</span> · <span>Jun 1, 2026</span> · <span>8 min read</span></div>
+          <h3>Designing Glassmorphism UIs that actually perform</h3>
+          <p>A deep dive into building beautiful frosted-glass interfaces with CSS backdrop-filter — without tanking your render performance. Includes accessibility and dark-mode tips.</p>
+          <div style="margin-top:22px"><a href="#" class="btn btn-primary" onclick="readPost(event)">Read Article <span class="arrow">→</span></a></div>
+        </div>
+      </article>
+
+      <div class="blog-grid">
+        <article class="glass bcard reveal d1" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#0b5fff,#2f86ff)">⚛️</div>
+          <div class="body"><div class="meta"><span class="cat">REACT</span> · <span>May 24, 2026</span></div><h3>Scaling React apps the right way</h3><p>Patterns for state, code-splitting and performance that keep large React codebases maintainable.</p><span class="read">Read more →</span></div>
+        </article>
+        <article class="glass bcard reveal d2" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#1670ff,#0a2540)">🛒</div>
+          <div class="body"><div class="meta"><span class="cat">E-COMMERCE</span> · <span>May 12, 2026</span></div><h3>Building checkout flows that convert</h3><p>UX and engineering lessons from shipping high-converting e-commerce checkouts.</p><span class="read">Read more →</span></div>
+        </article>
+        <article class="glass bcard reveal d3" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#2f86ff,#7db4ff)">🚀</div>
+          <div class="body"><div class="meta"><span class="cat">DEVOPS</span> · <span>Apr 30, 2026</span></div><h3>Zero-downtime deploys with Docker</h3><p>A practical CI/CD setup for shipping to production confidently, multiple times a day.</p><span class="read">Read more →</span></div>
+        </article>
+        <article class="glass bcard reveal d1" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#0a2540,#0b5fff)">📱</div>
+          <div class="body"><div class="meta"><span class="cat">MOBILE</span> · <span>Apr 18, 2026</span></div><h3>Flutter vs React Native in 2026</h3><p>An honest comparison to help you choose the right cross-platform stack.</p><span class="read">Read more →</span></div>
+        </article>
+        <article class="glass bcard reveal d2" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#1670ff,#2f86ff)">🔐</div>
+          <div class="body"><div class="meta"><span class="cat">SECURITY</span> · <span>Apr 5, 2026</span></div><h3>Web app security essentials</h3><p>The fundamentals every engineer should bake into their apps from day one.</p><span class="read">Read more →</span></div>
+        </article>
+        <article class="glass bcard reveal d3" onclick="readPost(event)">
+          <div class="cover" style="background:linear-gradient(150deg,#0b5fff,#0a2540)">🎨</div>
+          <div class="body"><div class="meta"><span class="cat">DESIGN</span> · <span>Mar 22, 2026</span></div><h3>Crafting design systems devs love</h3><p>Bridging the gap between design and code with tokens, components and docs.</p><span class="read">Read more →</span></div>
+        </article>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="glass reveal" style="margin-top:50px;padding:40px;text-align:center">
+        <h2 style="font-size:1.8rem;margin-bottom:8px">Subscribe to the newsletter</h2>
+        <p style="color:var(--text-soft);margin-bottom:24px">Get new articles and product updates straight to your inbox. No spam, ever.</p>
+        <form onsubmit="submitContact(event)" style="display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap">
+          <input required type="email" placeholder="you@email.com" style="flex:1;min-width:200px;padding:14px 16px;border-radius:999px;border:1px solid var(--glass-border);background:var(--bg-2);color:var(--text)" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot-inner">
+      <div class="brand"><span class="logo">BF</span><span>BATEMA FRANCIS</span></div>
+      <div class="foot-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="index.html#contact">Contact</a></div>
+      <div class="copy">© 2026 Batema Francis. Crafted with care.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    function readPost(e){ e.preventDefault(); showToast('📖 Full article coming soon!'); }
+  </script>
+</body>
+</html>
